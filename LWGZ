@@ -1,0 +1,47 @@
+[RoutingRule]
+DOMAIN-KEYWORD,baidu.com,PROXY
+DOMAIN-KEYWORD,ap6,DIRECT
+DOMAIN-KEYWORD,jiazhang,DIRECT
+DOMAIN-KEYWORD,msdk,DIRECT
+DOMAIN-KEYWORD,itop.qq.com,DIRECT
+DOMAIN,nj.cschannel.anticheatexpert.com,PROXY
+DOMAIN,down.anticheatexpert.com,PROXY
+DOMAIN,lobby-prod.df.qq.com,PROXY
+DOMAIN,xui.ptlogin2.qq.com,PROXY
+DOMAIN-KEYWORD,cg.qq.com,DIRECT
+DOMAIN-KEYWORD,weixin.qq.com,DIRECT
+DOMAIN-KEYWORD,openmobile.qq.com,DIRECT
+DOMAIN-KEYWORD,lanzou,DIRECT
+DOMAIN-KEYWORD,qq.com,DIRECT
+DOMAIN-KEYWORD,.eydata.net,DIRECT
+DOMAIN-KEYWORD,.myqcloud.com,DIRECT
+DOMAIN-KEYWORD,.tcdnos.com,DIRECT
+DOMAIN-KEYWORD,img.picgo.net,DIRECT
+DOMAIN-KEYWORD,cccimg.com,DIRECT
+PORT,80,REJECT
+PORT,443,REJECT
+PORT,442,PROXY
+PORT,10012,PROXY
+PORT,17500,PROXY
+PORT,65010,PROXY
+FINAL,DIRECT
+[RoutingDomainStrategy]
+AsIs
+[FreedomDomainStrategy]
+AsIs
+[LocalPolicy]
+bufferSize = 4096
+connIdle = 300
+downlinkOnly = 0
+handshake = 4
+uplinkOnly = 0
+[DnsServer]
+[DnsRule]
+[DnsHost]
+[DnsClientIp]
+[Log]
+loglevel = none
+[PerAppVpn]
+[PerAppMode]
+[PerAppAllow]
+[PerAppDisallow]
